@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections.Generic;
 
 namespace BuilderDemo
 {
@@ -6,22 +6,25 @@ namespace BuilderDemo
   {
     public override void PrepareBread()
     {
-      throw new NotImplementedException();
+      sandwich.BreadType = BreadType.White;
+      sandwich.IsToasted = true;
     }
 
     public override void ApplyMeatAndCheese()
     {
-      throw new NotImplementedException();
+      sandwich.CheeseType = CheeseType.Swiss;
+      sandwich.MeatType = MeatType.Turkey;
     }
 
     public override void ApplyVegetables()
     {
-      throw new NotImplementedException();
+      sandwich.Vegetables = new List<string> { "Tomato", "Onion", "Lettuce", "pepperoni" };
     }
 
     public override void AddCondiments()
     {
-      throw new NotImplementedException();
+      sandwich.HasMayo = true;
+      sandwich.HasMustard = true;
     }
   }
 }
