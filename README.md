@@ -1,2 +1,2 @@
 # BuilderPattern
-A sample of the Builder Pattern
+A sample of the Builder Pattern with sandwich model
